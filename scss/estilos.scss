@@ -1,0 +1,22 @@
+   /*CUADERNOS ANIMADO*/ 
+   div{
+
+    .cuadernosContenedor__item img{
+    width: 200px;
+    height: auto;
+    line-height: 100px;
+    border: 1px solid #A69581;
+    transition: 0.75s;
+    }
+  }
+
+  div{
+
+    .cuadernosContenedor__item img:hover {
+    width: 210px;
+    height: auto;
+    line-height: 100px;
+    border: 1.5px solid #A69581;
+    }
+    
+  }

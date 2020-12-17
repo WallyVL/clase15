@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/styles.css">
+        <title>Alondra Cuadernos</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@600&display=swap" rel="stylesheet"> 
+        <script type="text/script" src="../js/jquery-3.5.1.slim.min.js"></script>
+    </head>
+    <body>
+        <header>
+            <div>
+                <ul class="nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../cuadernos/cuadernos.html">Cuadernos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../albumes/albumes.html">Álbumes</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../agendas/agendas.html">Agendas</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+           
+           <h1>Alondra Cuadernos</h1>
+        </header>
+        <main class="formularioFondo">
+            <section class="formularioContacto">
+                <h2 class="estiloTitulos">CONTACTO</h2>
+                <form name="myFormName" action="gracias.html" method="post">
+                    <label for="nombre_input">Nombre</label>
+                    <input type="text" name="nombre_input" id="nombre_input" required placeholder="Pablo Aranjuez">
+                    <br><br>
+
+                    <label for="email_input">Email</label>
+                    <input type="email" name="email_input" id="email_input" required placeholder="pabloaranjuez@mail.com">
+                    <br><br>
+
+                    <label for="mi_seleccion">¿Cómo nos conociste?</label>
+                    <select name="mi_seleccion" id="mi_seleccion">
+                    <option selected="selected" value="0">Seleccione</option>
+                    <option value="1">Referido</option>
+                    <option value="2">Redes Sociales</option>
+                    <option value="3">Otro</option>
+                    </select>
+                    <br><br>
+
+                    <label for="textarea_input">Mensaje</label>
+                    <br>
+                    <textarea name="textarea_input" id="textarea_input" rows="10" cols="50">
+                    </textarea>
+                    <br><br>
+                    
+                    <h3>¿Desea recibir el Newsletter?</h3>
+                    <input type="checkbox" name="newsletter_si" id="newsletter_si">
+                    <label for="newsletter_si">Si</label>
+                    <br><br>
+
+                    <label for="my_file_input"></label>
+                    <input type="submit" value="Enviar formulario"/>
+                    <input type="reset" value="Limpiar formulario"/>
+                    
+                </form>
+            </section>
+            
+        </main>
+        <footer>
+            <p>&copy;<em>Copyright 2020 - Alondra Cuadernos</em>&reg;</p>
+        </footer>
+    </body>
+</html>
