@@ -1,22 +1,28 @@
-   /*CUADERNOS ANIMADO*/ 
-   div{
+  $anchoMax: 210px;
+$letraFormularioItem: 'Lato', sans-serif;  
 
-    .cuadernosContenedor__item img{
-    width: 200px;
-    height: auto;
-    line-height: 100px;
-    border: 1px solid #A69581;
-    transition: 0.75s;
-    }
-  }
 
-  div{
 
-    .cuadernosContenedor__item img:hover {
-    width: 210px;
-    height: auto;
-    line-height: 100px;
-    border: 1.5px solid #A69581;
-    }
-    
-  }
+ /*CUADERNOS*/
+
+ div.cuadernosContenedor__item {
+   img {
+     @if width == anchoMax {
+       border: 1.5px solid #1a120b;
+     } @else {
+       border: 0.5px solid #A69581;
+}
+
+   }
+
+}
+
+ /*CONTACTO*/
+
+ .formularioContenedor__contacto__item {
+   font-size: 1rem;
+   color: #48490c;
+   font-family: $letraFormularioItem;
+   font-style: italic;
+ 
+ }
