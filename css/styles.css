@@ -241,6 +241,12 @@ h1 {
   width: 480px;
   }
 
+  #textarea_input {
+    display:flex;
+    
+    width: 480px;
+    }
+
   /*main {
     width:990px;
     position: relative;
