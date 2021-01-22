@@ -241,11 +241,35 @@ h1 {
   width: 480px;
   }
 
-  #textarea_input {
-    display:flex;
-    
-    width: 480px;
+#textarea_input {
+  display:flex;
+  
+  width: 480px;
     }
+
+@media (max-width: 768px) {
+  #nombre_input {
+   width:270px;
+      }
+}
+
+@media (max-width: 768px) {
+  #email_input {
+   width:270px;
+      }
+}
+
+@media (max-width: 768px) {
+  #mi_seleccion {
+   width:270px;
+      }
+}
+
+@media (max-width: 768px) {
+  #textarea_input {
+   width:270px;
+      }
+}
 
   /*main {
     width:990px;
