@@ -11,12 +11,13 @@
         <title>Alondra Cuadernos</title>
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@600&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     </head>
     <body>
         <header>
 
-          <div>
+          <div class="barraNavegacion">
             <ul class="nav">
               <li class="nav-item">
                 <a class="nav-link" href="index.html">Home</a>
@@ -35,6 +36,23 @@
               </li>
             </ul>
           </div>
+
+          <!-- Top Navigation Menu -->
+          <div class="mobile-container">
+<div class="topnav">
+<a href="../index.html" class="active">Alondra</a>
+<div id="myLinks">
+  <a class="nav-link" href="index.html">Home</a>
+  <a class="nav-link" href="cuadernos/cuadernos.html">Cuadernos</a>
+  <a class="nav-link" href="albumes/albumes.html">Álbumes</a>
+  <a class="nav-link" href="agendas/agendas.html">Agendas</a>
+  <a class="nav-link" href="contacto/contacto.html">Contacto</a>
+</div>
+<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+  <i class="fa fa-bars"></i>
+</a>
+</div>
+</div>
           
                         
             <h1>Alondra Cuadernos</h1>
@@ -42,7 +60,7 @@
         </header>
         <main class="container">
               <section>
-                <div class="row">
+                <div class="row justify-content-center">
 
                     <div class="col-lg-4 col-md-8 col-sm-12">
                       <h2 class="estiloTitulos">Quienes somos</h2>
@@ -64,68 +82,25 @@
                     </div>
                     
                 </div>
-            </section>
-          
-            <!--TABLA-->
-              <section>
-              <div class="tabla">
-              <table border="1">   
-                <thead>
-                  <tr>
-                    <th></th>
-                    <th>Anillado</th>
-                    <th>Cantidad de hojas</th>
-                    <th>Formato</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td rowspan="4">Cuadernos</td>
-                    <td>No</td>
-                    <td>20</td>
-                    <td>A6</td>
-                  </tr>
-                  <tr>
-                    <td>No</td>
-                    <td>40</td>
-                    <td>A5</td>
-                  </tr>
-                  <tr>
-                    <td>No</td>
-                    <td>80</td>
-                    <td>A4</td>
-                  </tr>
-                  <tr>
-                    <td>Si</td>
-                    <td>80</td>
-                    <td>A4</td>
-                  </tr>
-                  <tr>
-                    <td>Álbumes</td>
-                    <td>No</td>
-                    <td>20</td>
-                    <td> A4
-                      <ol>
-                        <li>Lomo Ojal</li>
-                        <li>Lomo Tradicional</li>
-                        <li>Lomo Japonés</li>
-                      </ol>
-                  </td>
-                  </tr>
-                </tbody>
-                <tfoot>
-                  <tr>
-                    <td>Agendas</td>
-                    <td>Si</td>
-                    <td>80</td>
-                    <td>A5</td>
-                  </tr>
-                </tfoot>
-              </table>
-              </div>
-            </section>
 
-                      
+              </section> 
+              
+              <section class="fotosHome">            
+              <div class="row justify-content-center">
+              <div class="col-lg-4 col-md-8 col-sm-12">
+                <img src="img/home1Crop.jpg" width=100% height=auto>
+              </div>
+              <div class="col-lg-4 col-md-8 col-sm-12">
+                <img src="img/home2Crop.jpg" width=100% height=auto>
+              </div>           
+              <div class="col-lg-4 col-md-8 col-sm-12">
+                <img src="img/home3Crop.jpg" width=100% height=auto>
+              </div> 
+              </div>           
+                                   
+              </section>
+          
+                                 
           </main>
         <footer>
             <p>&copy;<em>Copyright 2020 - Alondra Cuadernos</em>&reg;</p>
@@ -133,5 +108,15 @@
 
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+        <script>
+          function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+              x.style.display = "none";
+            } else {
+              x.style.display = "block";
+            }
+          }
+          </script>
     </body>
 </html>
