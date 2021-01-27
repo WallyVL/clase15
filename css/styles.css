@@ -13,14 +13,20 @@
   /*NAV*/
   /*ANIMADO*/
 
+  .barraNavegacion {
+    display: flex;
+    flex-direction: row; 
+   justify-content: center;
+   background-image: linear-gradient(to bottom, #A69581, #4c401e );
+    }
+
   ul li a { 
-    text-align: right;
+    text-align: center;
     display: inline-block;
     font-size: 1rem;
     color:#ebffe8;
     font-family: 'Lato', sans-serif;
-    font-style: italic;
-    font-weight: 700;
+    font-weight: 400;
     text-decoration: none;
     transition: 0.5s;
     
@@ -30,6 +36,7 @@
     font-size: 1.1rem;
     color:#bce9b7;
     font-family: 'Lato', sans-serif;
+    font-weight: 550;
        
     }
 
@@ -39,22 +46,15 @@
     
       }
 
-  ul img {
-    
-    /*margin: 10px 1240px 10px 15px;*/
-  }    
-
-
   nav{
-    background-image: linear-gradient(to bottom, #A69581, #48490c );
+    background-image: linear-gradient(to bottom, #A69581,  #4c401e );
 
   }
 
   /*GRADIENTE*/
   ul{
     list-style-type: none;
-    background-image: linear-gradient(to bottom, #A69581, #48490c );
-    /*background-color: #A69581;*/
+    background-image: linear-gradient(to bottom, #A69581, #4c401e );
     background-size: cover;
     overflow: hidden;
     position: sticky;
@@ -90,17 +90,19 @@
   color: white;
   padding: 14px 16px;
   text-decoration: none;
+  font-family: 'Lato', sans-serif;
   font-size: 17px;
   display: block;
   height: 50px;
 }
 
 .topnav a.icon {
-  background-image: linear-gradient(to bottom, #A69581, #48490c );
+  background-image: linear-gradient(to bottom, #A69581,  #4c401e );
   display: block;
   position: absolute;
   right: 0;
   top: 0;
+  font-family: 'IM Fell Double Pica', serif, Arial, verdana;
 }
 
 .topnav a:hover {
@@ -109,8 +111,9 @@
 }
 
 .active {
-  background-image: linear-gradient(to bottom, #A69581, #48490c );
+  background-image: linear-gradient(to bottom, #A69581, #4c401e );
   color: white;
+  font-family: 'IM Fell Double Pica', serif, Arial, verdana;
 }
 
 
@@ -138,11 +141,20 @@
   .fotosHome {
   display: none;
   }
-}  
+}
 
+@media (max-width: 1920px) {
+  .fotosHomeMobile {
+  display: none;
+  }
+} 
 
+@media (max-width: 768px) {
+  .fotosHomeMobile {
+  display: inherit;
+  }
+} 
 
- 
  .colorBarraSup {
   background-color: #A69581;
  }
@@ -160,10 +172,10 @@ section {
 }
 
 h1 {
-    padding: 30px 30px;
+    padding: 50px 50px;
     text-align: center;
-    font-family: Arial, verdana;
-    font-size: 2.5rem;
+    font-family: 'IM Fell Double Pica', serif, Arial, verdana;
+    font-size: 2.9rem;
     line-height: 24px;
     text-transform: uppercase;
     color: #ffffff;
@@ -172,14 +184,31 @@ h1 {
 
  }
 
+ @media (max-width: 768px) {
+  h1 {
+    padding: 30px 30px;
+    font-size: 1.8rem;
+    line-height: 24px;
+  }
+} 
+
+
  .estiloParrafos {
-  text-align: center;
+  text-align: left;
   font-family: 'Lato', sans-serif;
-  font-size: 1rem;
-  line-height: 18px;
+  font-size: 1.2rem;
+  line-height: 24px;
   color: #555555;
   padding-bottom: 10px; 
 }
+
+@media (max-width: 768px) {
+  .estiloParrafos {
+    font-size: 1.0rem;
+    line-height: 18px;
+    text-align: left;
+  }
+}  
 
 
 .estiloTitulos {
@@ -187,22 +216,77 @@ h1 {
     font-family: 'Playfair Display', serif;
     font-size: 1.5rem;
     line-height: 24px;
-    color: #48490c;
+    color: #4c401e;
     padding-bottom: 10px; 
      }
 
+   
+.contenedorIlustracion {
+    display:flex;
+    justify-content: center;
 
+}
 
-.tabla {
-   display:flex;
-   align-content: center;
-   padding: 10px;
-   margin: 0 350px 0 350px;
-   width: 400px;
-   height: auto;
-   border: solid 2px #A69581;
-      
-   } 
+.detallesContenedor {
+  border: solid 2px #A69581;
+  margin: 5% 10%;
+  padding: 5% 5% 2% 5%;
+
+}
+
+.botonContacto{
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.1rem;
+    line-height: 24px;
+    color: #ffffff;
+    padding: 10px; 
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+  }
+
+  .botonContacto:hover { 
+    font-size: 1.1rem;
+    color:#bce9b7;
+    font-family: 'Lato', sans-serif;
+    font-weight: 550;
+    text-decoration: none
+  }
+
+  @media (max-width: 768px) {
+    .botonContacto {
+      font-size: 0.9rem;
+    }
+    .botonContacto:hover {
+      font-size: 0.9rem;
+    } 
+
+  }  
+
+  .contenedorBoton {
+    background-color:#4c401e;
+    display: flex;
+    justify-content: center;
+    margin: 0 30% 0 30%;
+  }
+
+  @media (max-width: 768px) {
+    .botonContacto {
+      font-size: 0.9rem;
+    }
+    .botonContacto:hover {
+      font-size: 0.9rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .contenedorBoton {
+      margin: 0 15% 0 15%;
+    }
+  }
+
+/*//////////////////////////*/
 
 .formularioContacto {
   padding: 10px;
@@ -271,43 +355,15 @@ h1 {
       }
 }
 
-  /*main {
-    width:990px;
-    position: relative;
-    margin: 20px auto;
-    display: block;
-  }*/
-
-  footer {
-    padding-top: 15px;
-    text-align: center;
-  }
+ 
+footer {
+   padding-top: 40px;
+   text-align: center;
+}
 
   
 
-/*AGENDA RESPONSIVE*/
-
-
-h1 {
-  font-size: 1.5rem;
-
-}
-
-}
-
-/*@media (max-width: 768px) {
-  #carouselExampleIndicators{
-  display: none;
-}*/
-
-}
-
-/*CUADERNOS RESPONSIVE*/
-
-
-   /*FLEXBOX*/
-   /*PÁGINA CUADERNOS*/
-   /*PÁGINA CUADERNOS*/
+/*CUADERNOS*/
 
    .cuadernosContenedor {
     display: flex;
@@ -342,9 +398,7 @@ h1 {
 
 
 
-   /*GRILLA*/
-   /*PÁGINA ÁLBUMES*/
-   /*PÁGINA ÁLBUMES*/  
+  /*PÁGINA ÁLBUMES*/  
    
    #grillaAlbumes {
     display: grid;
@@ -387,7 +441,7 @@ h1 {
     font-family: 'Playfair Display', serif;
     font-size: 1.5rem;
     line-height: 24px;
-    color: #48490c;
+    color: #4c401e;
     padding-bottom: 10px; 
     }
 
