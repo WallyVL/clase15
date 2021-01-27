@@ -175,9 +175,8 @@ h1 {
     padding: 50px 50px;
     text-align: center;
     font-family: 'IM Fell Double Pica', serif, Arial, verdana;
-    font-size: 2.9rem;
+    font-size: 3.9rem;
     line-height: 24px;
-    text-transform: uppercase;
     color: #ffffff;
     background-image: url("../img/forestBanner.jpg");
     background-size: cover;
@@ -187,7 +186,7 @@ h1 {
  @media (max-width: 768px) {
   h1 {
     padding: 30px 30px;
-    font-size: 1.8rem;
+    font-size: 2.9rem;
     line-height: 24px;
   }
 } 
